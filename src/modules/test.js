@@ -1,4 +1,4 @@
 
-export const test = () => {
+export default () => {
   alert("test!!");
 };
