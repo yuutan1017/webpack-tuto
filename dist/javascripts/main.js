@@ -106,7 +106,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _tes
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\r\n  alert(\"test!!\");\r\n});\r\n\n\n//# sourceURL=webpack:///./src/javascripts/test.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst num = [100, 200, 300];\r\nconst table = new Array(1, 2, 3, 4, 5, ...num);\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (() => {\r\n  console.table(table);\r\n});\r\n\n\n//# sourceURL=webpack:///./src/javascripts/test.js?");
 
 /***/ }),
 
