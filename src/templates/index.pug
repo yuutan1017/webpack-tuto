@@ -1,11 +1,8 @@
-doctype html
+extends _layout.pug
 
-html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title webpack Tutorial
-  body 
-    include _menu.pug
-    h1 Hello, webpack 
-    img(src="../images/image_1.png")
+block locals 
+  - var title = "indexPage"
+
+block content 
+  h1 Hello, webpack 
+  img(src="../images/image_1.png")

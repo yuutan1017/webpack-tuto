@@ -1,10 +1,8 @@
-doctype html
+extends _layout.pug
 
-html(lang="ja")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    title access page 
-  body
-    h1 Access Page!!
-    include _menu.pug 
+block locals 
+  - var title = "accessPage"
+
+block content 
+  h1 Access Page!!
+
