@@ -1,5 +1,5 @@
 import test from "./test";
-import "../stylesheets/main.css";
+import "../stylesheets/main.scss";
 
 test();
 console.log("webpack");
