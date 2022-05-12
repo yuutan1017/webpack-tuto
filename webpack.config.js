@@ -20,7 +20,7 @@ module.exports = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["@babel/preset-env" ],
+              presets: ["@babel/preset-env", "@babel/preset-react"],
             },
           },
         ],
@@ -35,7 +35,7 @@ module.exports = {
             loader: "css-loader",
             options: {
               sourceMap: false,
-            }
+            },
           },
           {
             loader: "sass-loader",
@@ -43,13 +43,22 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpg)/,
+        test: /\.(png|jpg|jpeg)/,
         use: [
           {
             loader: "file-loader",
             options: {
               esModule: false,
               name: "images/[name].[ext]",
+            },
+          },
+          {
+            loader: "image-webpack-loader",
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
             },
           },
         ],
