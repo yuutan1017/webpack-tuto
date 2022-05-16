@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import ReactDom  from "react-dom";
 
+import Alert from "./alert.tsx";
+
 const App = () => {
   const [count, setCount] = useState(0);
   const [multipl, setMultipl] = useState(1);
@@ -11,7 +13,8 @@ const App = () => {
   return (
     <>
       <h1>2の{count}乗 = {multipl}</h1>
-      <button onClick={handleMultipl}>add</button>
+      <button onClick={handleMultipl}>Multipl</button>
+      <Alert message="success!"/>
     </>
   );
 };
